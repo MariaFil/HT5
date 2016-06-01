@@ -30,14 +30,27 @@ body {
 nav {		
 	display: inline-block;	
 	float: right;
-	padding-right: 25px;
+	padding-right: 35px;
+	padding-top: 5px;
 }
 
 nav a {
 	text-decoration: none;	
 	color: #60b5ed;
-	padding: 9px 10px;
-	font-size: 18px;
+	padding: 13px 17px;
+	font-size: 14px;
+}
+
+.flag {
+	position: relative;
+	padding-left: 40px;
+}
+
+.img_flag {
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	padding: 0 10px;
 }
 
 .Ajuda{
@@ -47,24 +60,33 @@ nav a {
 a span {
 	color: #fff;	
 }
+
  .underline{
  	text-decoration: underline;
  }
 nav a:hover {
-	background-image: url(../img/menu.png);
+	background: rgb(103,198,230); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(103,198,230,1) 0%, rgba(46,122,196,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(103,198,230,1) 0%,rgba(46,122,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(103,198,230,1) 0%,rgba(46,122,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', endColorstr='#2e7ac4',GradientType=0 );
 	color: #fff;
 }
 
 /*Form*/
 
-form {
+.sect_form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 200px;
+
+}
+
+form {	
 	width: 560px;
 	height: 610px;
 	background-color: rgba(33,39,35,0.5);
-	position: absolute;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, 20%);
 	text-align: center;
 	color: #fff;
 	
@@ -112,12 +134,20 @@ form div {
 	-moz-box-shadow: 1px 3px 26px -1px rgba(126,184,239,1);
 }
 
-button {
+.create {
 	border: none;
 	border-radius: 5px;
 	height: 35px;
+	width: 150px;
+	color: #fff;
+	font-size: 14px;
+	background: rgb(103,198,230); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(103,198,230,1) 0%, rgba(46,122,196,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(103,198,230,1) 0%,rgba(46,122,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(103,198,230,1) 0%,rgba(46,122,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67c6e6', endColorstr='#2e7ac4',GradientType=0 ); 
 }
 
-button:active{
-	border: none;
+.create:active, button:focus{
+	outline: none;
 }
